@@ -1,0 +1,11 @@
+package com.ssafy.vue.controller;
+
+public class Snippet {
+	private int interestno;
+		private String userid;
+		private String dongCode;
+		private String dongName;
+		private String sidoName;
+		private String gugunName;
+}
+

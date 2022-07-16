@@ -1,0 +1,29 @@
+package com.ssafy.vue.dto;
+
+
+public class NewsDto {
+	
+	private String articleUrl;
+	private String title;
+	private String content;
+	
+	public String getArticleUrl() {
+		return articleUrl;
+	}
+	public void setArticleUrl(String articleUrl) {
+		this.articleUrl = articleUrl;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	
+}

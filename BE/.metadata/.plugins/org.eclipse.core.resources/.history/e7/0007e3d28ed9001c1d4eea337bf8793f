@@ -1,0 +1,10 @@
+package com.ssafy.vue.service;
+
+import java.util.List;
+
+import com.ssafy.vue.dto.InterestDto;
+
+public interface InterestService {
+	public boolean registerInterest(InterestDto interestDto) throws Exception;
+	public List<InterestDto> searchInterest();
+}

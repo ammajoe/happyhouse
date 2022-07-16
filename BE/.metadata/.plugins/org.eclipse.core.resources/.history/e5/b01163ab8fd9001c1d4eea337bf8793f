@@ -1,0 +1,32 @@
+package com.ssafy.vue.dto;
+
+public class InterestDto {
+
+	private int interestno;
+	private String userid;
+	private String dongCode;
+	
+	public int getInterestno() {
+		return interestno;
+	}
+	public void setInterestno(int interestno) {
+		this.interestno = interestno;
+	}
+	public String getUserid() {
+		return userid;
+	}
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+	public String getDongCode() {
+		return dongCode;
+	}
+	public void setDongCode(String dongCode) {
+		this.dongCode = dongCode;
+	}
+	
+	@Override
+	public String toString() {
+		return "InterestDto [interestno=" + interestno + ", userid=" + userid + ", dongCode=" + dongCode + "]";
+	}
+}

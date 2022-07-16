@@ -1,0 +1,28 @@
+package com.ssafy.vue.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.ssafy.vue.dto.InterestDto;
+import com.ssafy.vue.mapper.InterestMapper;
+
+@Service
+public class InterestServiceImpl implements InterestService {
+	
+    @Autowired
+	private InterestMapper interestMapper;
+    
+	@Override
+	public boolean registerInterest(InterestDto interestDto) throws Exception {
+		return interestMapper.registerInterest(interestDto) == 1;
+	}
+
+	@Override
+	public List<InterestDto> searchInterest() {
+		return interestMapper.selectInterest();
+	}
+
+}

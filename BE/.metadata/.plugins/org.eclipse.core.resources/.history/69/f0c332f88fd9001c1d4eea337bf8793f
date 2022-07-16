@@ -1,0 +1,14 @@
+package com.ssafy.vue.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+
+import com.ssafy.vue.dto.InterestDto;
+@Mapper
+public interface InterestMapper {
+	
+	public int registerInterest(InterestDto interestDto) throws Exception;
+	public List<InterestDto> selectInterest();
+}
